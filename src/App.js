@@ -2,7 +2,7 @@ import react from 'react';
 import axios from 'axios';
 import { MapContainer, TileLayer,  GeoJSON } from 'react-leaflet';
 import './App.css';
-import dataUrl from './test.geojson'
+import dataUrl from './test2.geojson'
  
 function App() {
   const [data, setData] = react.useState();
