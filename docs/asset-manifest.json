@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.79c4a0db.chunk.css",
-    "main.js": "/static/js/main.750ef447.chunk.js",
-    "main.js.map": "/static/js/main.750ef447.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7d864c4f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7d864c4f.js.map",
-    "static/js/2.83e7c225.chunk.js": "/static/js/2.83e7c225.chunk.js",
-    "static/js/2.83e7c225.chunk.js.map": "/static/js/2.83e7c225.chunk.js.map",
-    "static/js/3.f7eef8c4.chunk.js": "/static/js/3.f7eef8c4.chunk.js",
-    "static/js/3.f7eef8c4.chunk.js.map": "/static/js/3.f7eef8c4.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.79c4a0db.chunk.css.map": "/static/css/main.79c4a0db.chunk.css.map",
-    "static/js/2.83e7c225.chunk.js.LICENSE.txt": "/static/js/2.83e7c225.chunk.js.LICENSE.txt",
-    "static/media/test2.a49320f8.geojson": "/static/media/test2.a49320f8.geojson"
+    "main.css": "https://vdesgrange.github.io/ais-outage-web/static/css/main.79c4a0db.chunk.css",
+    "main.js": "https://vdesgrange.github.io/ais-outage-web/static/js/main.750ef447.chunk.js",
+    "main.js.map": "https://vdesgrange.github.io/ais-outage-web/static/js/main.750ef447.chunk.js.map",
+    "runtime-main.js": "https://vdesgrange.github.io/ais-outage-web/static/js/runtime-main.cb8d4c54.js",
+    "runtime-main.js.map": "https://vdesgrange.github.io/ais-outage-web/static/js/runtime-main.cb8d4c54.js.map",
+    "static/js/2.83e7c225.chunk.js": "https://vdesgrange.github.io/ais-outage-web/static/js/2.83e7c225.chunk.js",
+    "static/js/2.83e7c225.chunk.js.map": "https://vdesgrange.github.io/ais-outage-web/static/js/2.83e7c225.chunk.js.map",
+    "static/js/3.f7eef8c4.chunk.js": "https://vdesgrange.github.io/ais-outage-web/static/js/3.f7eef8c4.chunk.js",
+    "static/js/3.f7eef8c4.chunk.js.map": "https://vdesgrange.github.io/ais-outage-web/static/js/3.f7eef8c4.chunk.js.map",
+    "index.html": "https://vdesgrange.github.io/ais-outage-web/index.html",
+    "static/css/main.79c4a0db.chunk.css.map": "https://vdesgrange.github.io/ais-outage-web/static/css/main.79c4a0db.chunk.css.map",
+    "static/js/2.83e7c225.chunk.js.LICENSE.txt": "https://vdesgrange.github.io/ais-outage-web/static/js/2.83e7c225.chunk.js.LICENSE.txt",
+    "static/media/test2.a49320f8.geojson": "https://vdesgrange.github.io/ais-outage-web/static/media/test2.a49320f8.geojson"
   },
   "entrypoints": [
-    "static/js/runtime-main.7d864c4f.js",
+    "static/js/runtime-main.cb8d4c54.js",
     "static/js/2.83e7c225.chunk.js",
     "static/css/main.79c4a0db.chunk.css",
     "static/js/main.750ef447.chunk.js"
