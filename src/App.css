@@ -2,7 +2,47 @@
   text-align: center;
 }
 
-#mapid { height: 100vh; }
+
+.ais-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+#mapid { 
+  flex: 1;
+}
+
+.time-range-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.time-range-details {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #77828C;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.from, .to {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.time-slider {
+}
+
+.time-container {
+  padding: 30px 10px 0;
+  height: 70px;
+  width: 85%;
+  box-sizing: border-box;
+}
 
 .App-logo {
   height: 40vmin;
