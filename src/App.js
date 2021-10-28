@@ -1,5 +1,6 @@
 import react from 'react';
 import axios from 'axios';
+import { debounce } from 'lodash';
 import { MapContainer, TileLayer,  GeoJSON } from 'react-leaflet';
 import TimeRange from 'react-timeline-range-slider'
 import moment from 'moment';
@@ -13,6 +14,7 @@ class App extends react.Component {
   state = {
       error: false,
       selectedInterval: [startTime, endTime],
+      temporarySelectedInterval: [startTime, endTime],
       data: undefined,
   }
 
@@ -25,7 +27,14 @@ class App extends react.Component {
 
   errorHandler = ({ error }) => this.setState({ error })
 
-  onChangeCallback = selectedInterval => this.setState({ selectedInterval })
+  onChangeCallback = temporarySelectedInterval => {
+    this.setState({ temporarySelectedInterval });
+    this.debouncedSelectedInterval(temporarySelectedInterval);
+  }
+
+  debouncedSelectedInterval = debounce(selectedInterval => {
+    this.setState({selectedInterval});
+  }, 500)
 
   formatTick = ms => moment(ms).format("MMM 'YY");
 
@@ -41,7 +50,7 @@ class App extends react.Component {
 
 
   render() {
-    const {data, selectedInterval} = this.state;
+    const {data, selectedInterval, temporarySelectedInterval} = this.state;
 
     return (
       <div className="ais-wrapper">
@@ -58,14 +67,14 @@ class App extends react.Component {
 
         <div className='time-range-section'>
           <div className='time-range-details'>
-      <div className='from'><b>From</b> {moment(selectedInterval[0]).format("D MMMM 'YY HH:mm")}</div>
-      <div className='to'><b>To</b> {moment(selectedInterval[1]).format("D MMMM 'YY HH:mm")}</div>
+            <div className='from'><b>From</b> {moment(selectedInterval[0]).format("D MMMM 'YY HH:mm")}</div>
+            <div className='to'><b>To</b> {moment(selectedInterval[1]).format("D MMMM 'YY HH:mm")}</div>
           </div>
           <TimeRange
             //sliderRailClassName="time-slider"
             containerClassName="time-container"
             timelineInterval={[startTime, endTime]}
-            selectedInterval={selectedInterval}
+            selectedInterval={temporarySelectedInterval}
             onUpdateCallback={this.errorHandler}
             onChangeCallback={this.onChangeCallback}
             formatTick={this.formatTick}
