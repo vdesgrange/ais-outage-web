@@ -10,6 +10,7 @@ import { FILES_INDEX } from './ais_indexing';
 
 const startTime = moment("2016-02-01 00:00:00");
 const endTime = moment("2017-08-31 23:59:59");
+const publicUrl = process.env.PUBLIC_URL || ''
 
 class App extends react.Component {
   state = {
@@ -44,7 +45,7 @@ class App extends react.Component {
     const data = await Promise.all(
       files_to_load
         .filter(x => x)
-        .map(jsonURL => axios.get(`/data/${jsonURL}`).then(res => res.data))
+        .map(jsonURL => axios.get(`${publicUrl}/data/${jsonURL}`).then(res => res.data))
     );
     this.setState({data})
   }
@@ -102,7 +103,7 @@ class App extends react.Component {
 
     return (
       <div className="ais-wrapper">
-        <MapContainer id="mapid" center={[52.377956, 4.897070]} zoom={9} scrollWheelZoom={true}>
+        <MapContainer id="mapid" center={[52.377956, 4.897070]} zoom={10} scrollWheelZoom={true}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

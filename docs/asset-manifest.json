@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://vdesgrange.github.io/ais-outage-web/static/css/main.79c4a0db.chunk.css",
-    "main.js": "https://vdesgrange.github.io/ais-outage-web/static/js/main.8b6bc1de.chunk.js",
-    "main.js.map": "https://vdesgrange.github.io/ais-outage-web/static/js/main.8b6bc1de.chunk.js.map",
+    "main.js": "https://vdesgrange.github.io/ais-outage-web/static/js/main.4ee645e2.chunk.js",
+    "main.js.map": "https://vdesgrange.github.io/ais-outage-web/static/js/main.4ee645e2.chunk.js.map",
     "runtime-main.js": "https://vdesgrange.github.io/ais-outage-web/static/js/runtime-main.16281dce.js",
     "runtime-main.js.map": "https://vdesgrange.github.io/ais-outage-web/static/js/runtime-main.16281dce.js.map",
     "static/js/2.a1cf5f38.chunk.js": "https://vdesgrange.github.io/ais-outage-web/static/js/2.a1cf5f38.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.16281dce.js",
     "static/js/2.a1cf5f38.chunk.js",
     "static/css/main.79c4a0db.chunk.css",
-    "static/js/main.8b6bc1de.chunk.js"
+    "static/js/main.4ee645e2.chunk.js"
   ]
 }
