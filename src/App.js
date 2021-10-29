@@ -6,22 +6,22 @@ import TimeRange from 'react-timeline-range-slider'
 import moment from 'moment';
 import './App.css';
 import { FILES_INDEX } from './ais_indexing';
-import dataUrl from './2016-11.geojson';
+// import dataUrl from './2016-11.geojson';
 
-const startTime = moment("2016-01-01 00:00:00");
-const endTime = moment("2017-12-31 23:59:59");
+const startTime = moment("2016-02-01 00:00:00");
+const endTime = moment("2017-08-31 23:59:59");
 
 class App extends react.Component {
   state = {
       error: false,
       selectedInterval: [startTime, endTime],
       temporarySelectedInterval: [startTime, endTime],
-      data: undefined,
+      data: [],
   }
 
   async componentDidMount() {
-    const {data} = await axios(dataUrl);
-    this.setState({data});
+    // const {data} = await axios(dataUrl);
+    // this.setState({data});
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -31,7 +31,7 @@ class App extends react.Component {
       const endMoment = moment(selectedInterval[1]);
 
       const files_to_load = this.fileSearch(startMoment, endMoment);
-      //this.fileLoader(files_to_load);
+      this.fileLoader(files_to_load);
     }
   }
 
@@ -39,28 +39,29 @@ class App extends react.Component {
 
   }
 
-  fileLoader = (files_to_load) => {
-    files_to_load.forEach(jsonURL => {
-      //let {data} = await axios(jsonURL);
-      axios.get(jsonURL)
-        .then(res => console.log(res))
-        .catch(res => console.log(res))
-    });
+  fileLoader = async (files_to_load) => {
+    console.log(files_to_load);
+    const data = await Promise.all(
+      files_to_load
+        .filter(x => x)
+        .map(jsonURL => axios.get(`/data/${jsonURL}`).then(res => res.data))
+    );
+    this.setState({data})
   }
 
   fileSearch = (startMoment, endMoment) => {
       const startYear = startMoment.year();
       const endYear =  endMoment.year();
-      const startMonth = startMoment.month();
-      const endMonth = endMoment.month();
+      const startMonth = startMoment.month() + 1;
+      const endMonth = endMoment.month() + 1;
       let filepath = "";
       let files_to_load = [];
 
-      for (let y=startYear; y < endYear; y++) {
+      for (let y=startYear; y <= endYear; y++) {
         let init_m = (y === startYear) ? startMonth : 1;
         let end_m = (y === endYear) ? endMonth : 12;
 
-        for (let m=init_m; m < end_m; m++) {
+        for (let m=init_m; m <= end_m; m++) {
           filepath = FILES_INDEX[y.toString()][m.toString()];
           files_to_load.push(filepath);
         }
@@ -82,16 +83,19 @@ class App extends react.Component {
 
   formatTick = ms => moment(ms).format("MMM 'YY");
 
-  //style = (feature) => {
-  //    return {
-  //      weight: 3,
-  //      opacity: 1,
-  //      color: 'red',
-  //      dashArray: '3',
-  //      fillOpacity: 0.0
-  //    };
-  //  }
+  getFeatureStyle = (feature) => {
+    const type = feature.properties.type;
+    const color = (['#00A19D', '#FFB344', '#E05D5D'])[type];
+    const dashArray = ([undefined, undefined, 5])[type];
+    const style = {
+      weight: 3,
+      opacity: 1,
+      color,
+      dashArray
+    };
 
+    return style;
+  }
 
   render() {
     const {data, selectedInterval, temporarySelectedInterval} = this.state;
@@ -106,13 +110,13 @@ class App extends react.Component {
           <TileLayer
             url="https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png"
           />
-          { data && <GeoJSON data={data} />}
+      { data && data.length && data.map(d => <GeoJSON data={d} style={this.getFeatureStyle} />)}
         </MapContainer>
 
         <div className='time-range-section'>
           <div className='time-range-details'>
             <div className='from'><b>From</b> {moment(selectedInterval[0]).format("D MMMM 'YY HH:mm")}</div>
-      <div className='to'><b>To</b> {moment(selectedInterval[1]).format("D MMMM 'YY HH:mm")}</div>
+            <div className='to'><b>To</b> {moment(selectedInterval[1]).format("D MMMM 'YY HH:mm")}</div>
           </div>
           <TimeRange
             //sliderRailClassName="time-slider"
