@@ -10,7 +10,7 @@ import { FILES_INDEX } from './ais_indexing';
 
 const startTime = moment("2016-02-01 00:00:00");
 const endTime = moment("2017-08-31 23:59:59");
-const publicUrl = process.env.PUBLIC_URL || ''
+const publicUrl = process.env.PUBLIC_URL || '';
 
 class App extends react.Component {
   state = {
@@ -36,16 +36,11 @@ class App extends react.Component {
     }
   }
 
-  dataSorter = (data) => {
-
-  }
-
   fileLoader = async (files_to_load) => {
-    console.log(files_to_load);
     const data = await Promise.all(
       files_to_load
-        .filter(x => x)
-        .map(jsonURL => axios.get(`${publicUrl}/data/${jsonURL}`).then(res => res.data))
+      .filter(x => x)
+      .map(jsonURL => axios.get(`${publicUrl}/data/${jsonURL}`).then(res => ({date: jsonURL, collect: res.data})))
     );
     this.setState({data})
   }
@@ -98,8 +93,10 @@ class App extends react.Component {
     return style;
   }
 
+
   render() {
     const {data, selectedInterval, temporarySelectedInterval} = this.state;
+    console.log(this.state);
 
     return (
       <div className="ais-wrapper">
@@ -111,7 +108,19 @@ class App extends react.Component {
           <TileLayer
             url="https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png"
           />
-      { data && data.length && data.map(d => <GeoJSON data={d} style={this.getFeatureStyle} />)}
+      { data && data.length && data.map(d => 
+        <GeoJSON 
+          key={`date-${d.date}`}
+          data={d.collect} 
+          style={this.getFeatureStyle} 
+          eventHandlers={{
+            click: function () {
+              console.log(this);
+            }
+
+          }}
+          />
+        )}
         </MapContainer>
 
         <div className='time-range-section'>
