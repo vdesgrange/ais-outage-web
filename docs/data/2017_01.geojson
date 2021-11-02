@@ -1005,16 +1005,6 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [4.36015, 51.25873]},
-      "properties": {
-        "mmsi": 210688000,
-        "start_date": "2017-01-18 07:00:00.0",
-        "end_date": "2017-01-18 07:00:00.0",
-        "type": 2
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
           "type": "MultiLineString", 
           "coordinates": [[[23.042288, 59.649494], [23.333134, 59.665245]], [[23.333134, 59.665245], [23.662607, 59.681732]], [[23.662607, 59.681732], [23.89783, 59.692947]]]
@@ -1496,26 +1486,6 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [6.8271832, 53.456005]},
-      "properties": {
-        "mmsi": 211315540,
-        "start_date": "2017-01-14 09:00:00.0",
-        "end_date": "2017-01-14 09:00:00.0",
-        "type": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [6.8271832, 53.456005]},
-      "properties": {
-        "mmsi": 211315540,
-        "start_date": "2017-01-14 07:00:00.0",
-        "end_date": "2017-01-14 07:00:00.0",
-        "type": 2
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
           "type": "MultiLineString", 
           "coordinates": [[[6.7991633, 51.174835], [6.803975, 51.1429]], [[6.6005783, 51.65403], [6.6005917, 51.654026]], [[6.6005917, 51.654026]], [[6.6005917, 51.654026]], [[6.6005917, 51.654026], [6.6527414, 51.57712]], [[6.6527414, 51.57712], [6.6836033, 51.55717]]]
@@ -1711,16 +1681,6 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [7.052602, 50.87945]},
-      "properties": {
-        "mmsi": 211498120,
-        "start_date": "2017-01-12 00:00:00.0",
-        "end_date": "2017-01-12 00:00:00.0",
-        "type": 1
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
           "type": "MultiLineString", 
           "coordinates": [[[6.687, 51.56235], [6.9993114, 50.968056]]]
@@ -1769,16 +1729,6 @@
         "start_date": "2017-01-28 00:00:00.0",
         "end_date": "2017-01-28 20:00:00.0",
         "type": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [7.362865, 51.654667]},
-      "properties": {
-        "mmsi": 211507220,
-        "start_date": "2017-01-28 14:00:00.0",
-        "end_date": "2017-01-28 14:00:00.0",
-        "type": 2
       }
     },
     {
@@ -6762,16 +6712,6 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [23.605833, 37.949165]},
-      "properties": {
-        "mmsi": 241443000,
-        "start_date": "2017-01-27 19:00:00.0",
-        "end_date": "2017-01-27 19:00:00.0",
-        "type": 1
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
           "type": "MultiLineString", 
           "coordinates": [[[23.605833, 37.949165], [23.605976, 37.949253]]]
@@ -6859,26 +6799,6 @@
         "start_date": "2017-01-15 05:00:00.0",
         "end_date": "2017-01-16 03:00:00.0",
         "type": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [19.06814, 47.44316]},
-      "properties": {
-        "mmsi": 243071118,
-        "start_date": "2017-01-16 05:00:00.0",
-        "end_date": "2017-01-16 05:00:00.0",
-        "type": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [19.06814, 47.44316]},
-      "properties": {
-        "mmsi": 243071118,
-        "start_date": "2017-01-15 23:00:00.0",
-        "end_date": "2017-01-15 23:00:00.0",
-        "type": 2
       }
     },
     {
@@ -7100,16 +7020,6 @@
         "start_date": "2017-01-07 19:00:00.0",
         "end_date": "2017-01-08 09:00:00.0",
         "type": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [4.8669133, 51.70098]},
-      "properties": {
-        "mmsi": 244090082,
-        "start_date": "2017-01-08 03:00:00.0",
-        "end_date": "2017-01-08 03:00:00.0",
-        "type": 2
       }
     },
     {
@@ -8037,16 +7947,6 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [6.60296, 51.65298]},
-      "properties": {
-        "mmsi": 244650983,
-        "start_date": "2017-01-15 22:00:00.0",
-        "end_date": "2017-01-15 22:00:00.0",
-        "type": 2
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
           "type": "MultiLineString", 
           "coordinates": [[[6.24759, 51.827534], [6.3402085, 51.757782]], [[6.3402085, 51.757782], [6.4208117, 51.71115]], [[6.4208117, 51.71115], [6.516345, 51.662308]], [[6.516345, 51.662308], [6.5815115, 51.659725]], [[6.5815115, 51.659725], [6.5983715, 51.592735]], [[6.596083, 51.58134]], [[6.596083, 51.58134]], [[6.596083, 51.58134]], [[6.596083, 51.58134]], [[6.596083, 51.58134]], [[6.596083, 51.58134]]]
@@ -8121,16 +8021,6 @@
         "start_date": "2017-01-25 20:00:00.0",
         "end_date": "2017-01-26 09:00:00.0",
         "type": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [5.457795, 51.809406]},
-      "properties": {
-        "mmsi": 244660472,
-        "start_date": "2017-01-26 07:00:00.0",
-        "end_date": "2017-01-26 07:00:00.0",
-        "type": 2
       }
     },
     {
@@ -8408,16 +8298,6 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [5.1386433, 51.73654]},
-      "properties": {
-        "mmsi": 244660930,
-        "start_date": "2017-01-19 11:00:00.0",
-        "end_date": "2017-01-19 11:00:00.0",
-        "type": 0
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
           "type": "MultiLineString", 
           "coordinates": [[[5.1386433, 51.73654]], [[5.1386433, 51.73654]]]
@@ -8427,16 +8307,6 @@
         "start_date": "2017-01-19 10:00:00.0",
         "end_date": "2017-01-20 06:00:00.0",
         "type": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [5.1386433, 51.73654]},
-      "properties": {
-        "mmsi": 244660930,
-        "start_date": "2017-01-20 00:00:00.0",
-        "end_date": "2017-01-20 00:00:00.0",
-        "type": 2
       }
     },
     {
@@ -8476,26 +8346,6 @@
         "start_date": "2017-01-07 12:00:00.0",
         "end_date": "2017-01-08 05:00:00.0",
         "type": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [3.8929517, 51.515026]},
-      "properties": {
-        "mmsi": 244670072,
-        "start_date": "2017-01-08 09:00:00.0",
-        "end_date": "2017-01-08 09:00:00.0",
-        "type": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [3.8929517, 51.515026]},
-      "properties": {
-        "mmsi": 244670072,
-        "start_date": "2017-01-08 04:00:00.0",
-        "end_date": "2017-01-08 04:00:00.0",
-        "type": 2
       }
     },
     {
@@ -9185,16 +9035,6 @@
         "start_date": "2017-01-15 16:00:00.0",
         "end_date": "2017-01-16 09:00:00.0",
         "type": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [4.3307934, 51.149956]},
-      "properties": {
-        "mmsi": 244690311,
-        "start_date": "2017-01-16 03:00:00.0",
-        "end_date": "2017-01-16 03:00:00.0",
-        "type": 2
       }
     },
     {
@@ -15218,16 +15058,6 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [-16.243834, 28.4645]},
-      "properties": {
-        "mmsi": 265070000,
-        "start_date": "2017-01-15 08:00:00.0",
-        "end_date": "2017-01-15 08:00:00.0",
-        "type": 2
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
           "type": "MultiLineString", 
           "coordinates": [[[15.596717, 56.162212]], [[15.596717, 56.162212]], [[15.596717, 56.162212]], [[15.596717, 56.162212]], [[15.596717, 56.162212]], [[15.596717, 56.162212]], [[15.596717, 56.162212]], [[15.596717, 56.162212]], [[15.596717, 56.162212]], [[15.596717, 56.162212]], [[15.596717, 56.162212], [15.59845, 56.162586]]]
@@ -15237,16 +15067,6 @@
         "start_date": "2017-01-08 17:00:00.0",
         "end_date": "2017-01-09 16:00:00.0",
         "type": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [15.596717, 56.162212]},
-      "properties": {
-        "mmsi": 265388000,
-        "start_date": "2017-01-09 10:00:00.0",
-        "end_date": "2017-01-09 10:00:00.0",
-        "type": 2
       }
     },
     {
@@ -16499,16 +16319,6 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [23.24178, 43.83124]},
-      "properties": {
-        "mmsi": 279202320,
-        "start_date": "2017-01-13 20:00:00.0",
-        "end_date": "2017-01-13 20:00:00.0",
-        "type": 0
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
           "type": "MultiLineString", 
           "coordinates": [[[23.24178, 43.83124]], [[23.24178, 43.83124]]]
@@ -16518,16 +16328,6 @@
         "start_date": "2017-01-13 06:00:00.0",
         "end_date": "2017-01-13 19:00:00.0",
         "type": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [23.24178, 43.83124]},
-      "properties": {
-        "mmsi": 279202320,
-        "start_date": "2017-01-13 17:00:00.0",
-        "end_date": "2017-01-13 17:00:00.0",
-        "type": 2
       }
     },
     {
@@ -16567,26 +16367,6 @@
         "start_date": "2017-01-15 16:00:00.0",
         "end_date": "2017-01-16 13:00:00.0",
         "type": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [20.726814, 44.66814]},
-      "properties": {
-        "mmsi": 279202484,
-        "start_date": "2017-01-15 15:00:00.0",
-        "end_date": "2017-01-16 11:00:00.0",
-        "type": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [20.726814, 44.66814]},
-      "properties": {
-        "mmsi": 279202484,
-        "start_date": "2017-01-16 07:00:00.0",
-        "end_date": "2017-01-16 07:00:00.0",
-        "type": 2
       }
     },
     {
@@ -17367,16 +17147,6 @@
         "start_date": "2017-01-19 19:00:00.0",
         "end_date": "2017-01-20 02:00:00.0",
         "type": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [18.422, -33.9095]},
-      "properties": {
-        "mmsi": 310034000,
-        "start_date": "2017-01-20 00:00:00.0",
-        "end_date": "2017-01-20 00:00:00.0",
-        "type": 2
       }
     },
     {
@@ -21476,16 +21246,6 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [-66.15603, 17.936775]},
-      "properties": {
-        "mmsi": 367555530,
-        "start_date": "2017-01-25 20:00:00.0",
-        "end_date": "2017-01-26 17:00:00.0",
-        "type": 1
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": {
           "type": "MultiLineString", 
           "coordinates": [[[-66.15598, 17.936762], [-66.16354, 17.920107]]]
@@ -22366,16 +22126,6 @@
         "start_date": "2017-01-16 06:00:00.0",
         "end_date": "2017-01-16 23:00:00.0",
         "type": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [120.293144, 22.6045]},
-      "properties": {
-        "mmsi": 372180000,
-        "start_date": "2017-01-16 19:00:00.0",
-        "end_date": "2017-01-16 19:00:00.0",
-        "type": 2
       }
     },
     {
@@ -28382,16 +28132,6 @@
         "start_date": "2017-01-15 09:00:00.0",
         "end_date": "2017-01-15 14:00:00.0",
         "type": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [-46.29276, -23.973139]},
-      "properties": {
-        "mmsi": 636091486,
-        "start_date": "2017-01-15 21:00:00.0",
-        "end_date": "2017-01-15 21:00:00.0",
-        "type": 2
       }
     },
     {
