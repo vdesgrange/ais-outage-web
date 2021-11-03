@@ -125,8 +125,8 @@ class App extends react.Component {
 
         <div className='time-range-section'>
           <div className='time-range-details'>
-            <div className='from'><b>From</b> {moment(selectedInterval[0]).format("D MMMM 'YY HH:mm")}</div>
-            <div className='to'><b>To</b> {moment(selectedInterval[1]).format("D MMMM 'YY HH:mm")}</div>
+            <div className='from'><b>From</b> {moment(selectedInterval[0]).format("MMMM 'YY")}</div>
+      <div className='to'><b>To</b> {moment(selectedInterval[1]).format("MMMM 'YY") /* D MMMM 'YY HH:mm' */ }</div> 
           </div>
           <TimeRange
             //sliderRailClassName="time-slider"

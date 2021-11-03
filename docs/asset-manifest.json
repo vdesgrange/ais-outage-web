@@ -1,22 +1,16 @@
 {
   "files": {
-    "main.css": "https://vdesgrange.github.io/ais-outage-web/static/css/main.79c4a0db.chunk.css",
-    "main.js": "https://vdesgrange.github.io/ais-outage-web/static/js/main.1951aea6.chunk.js",
-    "main.js.map": "https://vdesgrange.github.io/ais-outage-web/static/js/main.1951aea6.chunk.js.map",
-    "runtime-main.js": "https://vdesgrange.github.io/ais-outage-web/static/js/runtime-main.16281dce.js",
-    "runtime-main.js.map": "https://vdesgrange.github.io/ais-outage-web/static/js/runtime-main.16281dce.js.map",
-    "static/js/2.a1cf5f38.chunk.js": "https://vdesgrange.github.io/ais-outage-web/static/js/2.a1cf5f38.chunk.js",
-    "static/js/2.a1cf5f38.chunk.js.map": "https://vdesgrange.github.io/ais-outage-web/static/js/2.a1cf5f38.chunk.js.map",
-    "static/js/3.c9ef6038.chunk.js": "https://vdesgrange.github.io/ais-outage-web/static/js/3.c9ef6038.chunk.js",
-    "static/js/3.c9ef6038.chunk.js.map": "https://vdesgrange.github.io/ais-outage-web/static/js/3.c9ef6038.chunk.js.map",
+    "main.css": "https://vdesgrange.github.io/ais-outage-web/static/css/main.79c4a0db.css",
+    "main.js": "https://vdesgrange.github.io/ais-outage-web/static/js/main.4be8c936.js",
+    "main.js.map": "https://vdesgrange.github.io/ais-outage-web/static/js/main.4be8c936.js.map",
+    "static/js/1.0480b8a2.chunk.js": "https://vdesgrange.github.io/ais-outage-web/static/js/1.0480b8a2.chunk.js",
+    "static/js/1.0480b8a2.chunk.js.map": "https://vdesgrange.github.io/ais-outage-web/static/js/1.0480b8a2.chunk.js.map",
     "index.html": "https://vdesgrange.github.io/ais-outage-web/index.html",
-    "static/css/main.79c4a0db.chunk.css.map": "https://vdesgrange.github.io/ais-outage-web/static/css/main.79c4a0db.chunk.css.map",
-    "static/js/2.a1cf5f38.chunk.js.LICENSE.txt": "https://vdesgrange.github.io/ais-outage-web/static/js/2.a1cf5f38.chunk.js.LICENSE.txt"
+    "static/css/main.79c4a0db.css.map": "https://vdesgrange.github.io/ais-outage-web/static/css/main.79c4a0db.css.map",
+    "static/js/main.4be8c936.js.LICENSE.txt": "https://vdesgrange.github.io/ais-outage-web/static/js/main.4be8c936.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.16281dce.js",
-    "static/js/2.a1cf5f38.chunk.js",
-    "static/css/main.79c4a0db.chunk.css",
-    "static/js/main.1951aea6.chunk.js"
+    "static/css/main.79c4a0db.css",
+    "static/js/main.4be8c936.js"
   ]
 }
